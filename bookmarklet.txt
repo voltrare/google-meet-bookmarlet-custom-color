@@ -1,14 +1,1 @@
-Converted into bookmarklet using https://caiorss.github.io/bookmarklet-maker/
-
 javascript:(function()%7Bvar%20color%20%3D%20prompt(%22What%20color%20for%20background%22%2C%20'teal')%3B%0Adocument.getElementById('ow3').style.background%20%3D%20color%3B%0Adocument.querySelector('.xPh1xb.P9KVBf').id%20%3D%20'customtoolbarcolor'%3B%0Avar%20gradient1%20%3D%20prompt(%22What%20color%20for%20gradient%20'middle'%22%2C%20'beige')%3B%0Avar%20gradient2%20%3D%20prompt(%22What%20color%20for%20gradient%20'edge%22%2C%20'teal')%3B%0Adocument.getElementById(%22customtoolbarcolor%22).style.background%20%3D%20%22linear-gradient(to%20right%2C%20%22%20%2B%20gradient2%20%2B%20%22%2C%22%20%2B%20gradient1%20%2B%20%22%2C%20%22%20%2B%20gradient2%20%2B%20%22)%22%3B%7D)()%3B
-
-Beautified with https://beautifier.io
-
-javascript: (function() {
-	var color = prompt("What color for background", 'teal');
-	document.getElementById('ow3').style.background = color;
-	document.querySelector('.xPh1xb.P9KVBf').id = 'customtoolbarcolor';
-	var gradient1 = prompt("What color for gradient 'middle'", 'beige');
-	var gradient2 = prompt("What color for gradient 'edge", 'teal');
-	document.getElementById("customtoolbarcolor").style.background = "linear-gradient(to right, " + gradient2 + "," + gradient1 + ", " + gradient2 + ")";
-})();
