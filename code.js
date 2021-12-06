@@ -1,6 +1,3 @@
-// paste this code in console (ctrl + shift + i)
-// only works in google meet
-
 (function () {
   var currentLocation = window.location.hostname;
   if (currentLocation == 'meet.google.com') {
@@ -12,9 +9,11 @@
     document.getElementById('toolbarcolor').style.background = 'linear-gradient(to right, " + toolbargradientedge + "," + toolbargradientmiddle + ", " + toolbargradientedge + ")';
     document.getElementById('toolbarcolor').style.height = '69px';
   } else {
-    if (confirm("This is not google meet but you can change some color too 'not perfect'")) {
-      document.body.style.color = prompt("What color for text?", 'white');
-      document.body.style.background = prompt("What color for background?", 'black');
-    } else { }
+    var all = document.getElementsByTagName("*");
+    for (var i=0, max=all.length; i < max; i++) {
+    all[i].style.background = "black";
+    all[i].style.color = "white";
+    all[i].style.visibility = "visible";
+    }
   }
 })();
